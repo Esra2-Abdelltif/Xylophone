@@ -17,16 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
         appBarTheme: AppBarTheme(
-//backwardsCompatibility: true,
           backgroundColor: Colors.white,
           elevation: 0,
 
-          systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor: Colors.white,
-            statusBarIconBrightness:Brightness.dark,
-// statusBarBrightness: Brightness.dark,
-
-          ),
         ),
         textTheme: TextTheme(
           bodyText2:  TextStyle(fontSize: 28, color: Colors.white,fontWeight: FontWeight.w600),
