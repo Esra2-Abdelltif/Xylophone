@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class XyloPhoneScreen extends StatelessWidget {
   const XyloPhoneScreen({Key? key}) : super(key: key);
@@ -11,9 +12,20 @@ class XyloPhoneScreen extends StatelessWidget {
          children: [
            Expanded(
              child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 15),
+               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 20),
                child: Container(
-                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.deepPurpleAccent,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+                     gradient: new LinearGradient(
+                         colors: [
+                           HexColor('634d98'),
+                           HexColor('7b61c2')
+
+                         ],
+                         stops: [0.0, 1.0],
+                         begin: FractionalOffset.centerLeft,
+                         end: FractionalOffset.centerRight,
+                         tileMode: TileMode.repeated
+                     )
                     ),
                  child: Column(
                    children: [
@@ -45,9 +57,20 @@ class XyloPhoneScreen extends StatelessWidget {
            ),
            Expanded(
              child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 20),
+               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 25),
                child: Container(
-                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.indigo,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+                     gradient: new LinearGradient(
+                         colors: [
+                           HexColor('4a5897'),
+                           HexColor('5e6dbe')
+
+                         ],
+                         stops: [0.0, 1.0],
+                         begin: FractionalOffset.centerLeft,
+                         end: FractionalOffset.centerRight,
+                         tileMode: TileMode.repeated
+                     )
                  ),
                  child: Column(
                    children: [
@@ -79,9 +102,20 @@ class XyloPhoneScreen extends StatelessWidget {
            ),
            Expanded(
              child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 25),
+               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 30),
                child: Container(
-                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.blue,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+                     gradient: new LinearGradient(
+                         colors: [
+                           HexColor('3574c3'),
+                           HexColor('4391f4')
+
+                         ],
+                         stops: [0.0, 1.0],
+                         begin: FractionalOffset.centerLeft,
+                         end: FractionalOffset.centerRight,
+                         tileMode: TileMode.repeated
+                     )
                  ),
                  child: Column(
                    children: [
@@ -113,9 +147,20 @@ class XyloPhoneScreen extends StatelessWidget {
            ),
            Expanded(
              child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 30),
+               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 35),
                child: Container(
-                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.green,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+                     gradient: new LinearGradient(
+                         colors: [
+                           HexColor('3b7c7c'),
+                           HexColor('4c9a9c')
+
+                         ],
+                         stops: [0.0, 1.0],
+                         begin: FractionalOffset.centerLeft,
+                         end: FractionalOffset.centerRight,
+                         tileMode: TileMode.repeated
+                     )
                  ),
                  child: Column(
                    children: [
@@ -147,9 +192,20 @@ class XyloPhoneScreen extends StatelessWidget {
            ),
            Expanded(
              child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 35),
+               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 40),
                child: Container(
-                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.yellowAccent,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+                     gradient: new LinearGradient(
+                         colors: [
+                           HexColor('c9a13a'),
+                           HexColor('fdc749')
+
+                         ],
+                         stops: [0.0, 1.0],
+                         begin: FractionalOffset.centerLeft,
+                         end: FractionalOffset.centerRight,
+                         tileMode: TileMode.repeated
+                     )
                  ),
                  child: Column(
                    children: [
@@ -181,9 +237,20 @@ class XyloPhoneScreen extends StatelessWidget {
            ),
            Expanded(
              child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 40),
+               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 45),
                child: Container(
-                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.orange,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+                     gradient: new LinearGradient(
+                         colors: [
+                           HexColor('f8774f'),
+                           HexColor('f78351')
+
+                         ],
+                         stops: [0.0, 1.0],
+                         begin: FractionalOffset.centerLeft,
+                         end: FractionalOffset.centerRight,
+                         tileMode: TileMode.repeated
+                     )
                  ),
                  child: Column(
                    children: [
@@ -215,9 +282,20 @@ class XyloPhoneScreen extends StatelessWidget {
            ),
            Expanded(
              child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 45),
+               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 50),
                child: Container(
-                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.brown,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+                     gradient: new LinearGradient(
+                         colors: [
+                           HexColor('6f5b52'),
+                           HexColor('8b7164')
+
+                         ],
+                         stops: [0.0, 1.0],
+                         begin: FractionalOffset.centerLeft,
+                         end: FractionalOffset.centerRight,
+                         tileMode: TileMode.repeated
+                     )
                  ),
                  child: Column(
                    children: [
@@ -249,9 +327,21 @@ class XyloPhoneScreen extends StatelessWidget {
            ),
            Expanded(
              child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 50),
+               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 55),
                child: Container(
-                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.pink,
+                 decoration: BoxDecoration(
+                   borderRadius: BorderRadius.circular(25),
+                     gradient: new LinearGradient(
+                         colors: [
+                           HexColor('b64b63'),
+                           HexColor('e55f7a')
+
+                         ],
+                         stops: [0.0, 1.0],
+                         begin: FractionalOffset.centerLeft,
+                         end: FractionalOffset.centerRight,
+                         tileMode: TileMode.repeated
+                     )
                  ),
                  child: Column(
                    children: [
