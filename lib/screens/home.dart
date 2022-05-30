@@ -1,4 +1,3 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -12,420 +11,15 @@ class XyloPhoneScreen extends StatelessWidget {
     return Scaffold(
      body: Row(
          children: [
-           Expanded(
-             child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 20),
-               child: InkWell(
-                 onTap: (){
-                   try{
-                     playAudio('1');
-                   }
-                   catch(ex)
-                   {
-                     print(ex);
-                   }
-                 },
-                 child: Container(
-                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                       gradient: new LinearGradient(
-                           colors: [
-                             HexColor('634d98'),
-                             HexColor('7b61c2')
+           BuildNoteItem(verticalPadding: 25, fileName: '1', Color1: '634d98', Color2: '7b61c2', Letter: 'C', word: 'DO', num: '1'),
+           BuildNoteItem(verticalPadding: 30, fileName: '2', Color1: '4a5897', Color2: '5e6dbe', Letter: 'D', word: 'RI', num: '2'),
+           BuildNoteItem(verticalPadding: 35, fileName: '3', Color1: '3574c3', Color2: '4391f4', Letter: 'E', word: 'MI', num: '3'),
+           BuildNoteItem(verticalPadding: 40, fileName: '4', Color1: '3b7c7c', Color2: '4c9a9c', Letter: 'F', word: 'FA', num: '4'),
+           BuildNoteItem(verticalPadding: 45, fileName: '5', Color1: 'c9a13a', Color2: 'fdc749', Letter: 'G', word: 'SO', num: '5'),
+           BuildNoteItem(verticalPadding: 50, fileName: '6', Color1: 'f8774f', Color2: 'f78351', Letter: 'A', word: 'LA', num: '6'),
+           BuildNoteItem(verticalPadding: 55, fileName: '7', Color1: '6f5b52', Color2: '8b7164', Letter: 'B', word: 'SI', num: '7'),
+           BuildNoteItem(verticalPadding: 60, fileName: '1', Color1: 'b64b63', Color2: 'e55f7a', Letter: 'C', word: 'DO', num: '8'),
 
-                           ],
-                           stops: [0.0, 1.0],
-                           begin: FractionalOffset.centerLeft,
-                           end: FractionalOffset.centerRight,
-                           tileMode: TileMode.repeated
-                       )
-                      ),
-                   child: Column(
-                     children: [
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                           Text('C')
-                         ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                           Text('Do')
-                         ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                           Text('1')
-                         ],),
-                       )
-                     ],
-                   ),
-                 ),
-               ),
-             ),
-           ),
-           Expanded(
-             child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 25),
-               child: InkWell(
-                 onTap: (){
-                   try{playAudio('2');}
-                   catch(ex) {print(ex);}
-                 },
-                 child: Container(
-                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                       gradient: new LinearGradient(
-                           colors: [
-                             HexColor('4a5897'),
-                             HexColor('5e6dbe')
-
-                           ],
-                           stops: [0.0, 1.0],
-                           begin: FractionalOffset.centerLeft,
-                           end: FractionalOffset.centerRight,
-                           tileMode: TileMode.repeated
-                       )
-                   ),
-                   child: Column(
-                     children: [
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('D')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('RI')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('2')
-                           ],),
-                       )
-                     ],
-                   ),
-                 ),
-               ),
-             ),
-           ),
-           Expanded(
-             child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 30),
-               child: InkWell(
-                 onTap: (){
-                   try{playAudio('3');}
-                   catch(ex) {print(ex);}
-                 },
-                 child: Container(
-                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                       gradient: new LinearGradient(
-                           colors: [
-                             HexColor('3574c3'),
-                             HexColor('4391f4')
-
-                           ],
-                           stops: [0.0, 1.0],
-                           begin: FractionalOffset.centerLeft,
-                           end: FractionalOffset.centerRight,
-                           tileMode: TileMode.repeated
-                       )
-                   ),
-                   child: Column(
-                     children: [
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('E')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('MI')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('3')
-                           ],),
-                       )
-                     ],
-                   ),
-                 ),
-               ),
-             ),
-           ),
-           Expanded(
-             child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 35),
-               child: InkWell(
-                 onTap: (){
-                   try{playAudio('4');}
-                   catch(ex) {print(ex);}
-                 },
-                 child: Container(
-                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                       gradient: new LinearGradient(
-                           colors: [
-                             HexColor('3b7c7c'),
-                             HexColor('4c9a9c')
-
-                           ],
-                           stops: [0.0, 1.0],
-                           begin: FractionalOffset.centerLeft,
-                           end: FractionalOffset.centerRight,
-                           tileMode: TileMode.repeated
-                       )
-                   ),
-                   child: Column(
-                     children: [
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('F')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('FA')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('4')
-                           ],),
-                       )
-                     ],
-                   ),
-                 ),
-               ),
-             ),
-           ),
-           Expanded(
-             child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 40),
-               child: InkWell(
-                 onTap: (){
-                   try{playAudio('5');}
-                   catch(ex) {print(ex);}
-                 },
-                 child: Container(
-                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                       gradient: new LinearGradient(
-                           colors: [
-                             HexColor('c9a13a'),
-                             HexColor('fdc749')
-
-                           ],
-                           stops: [0.0, 1.0],
-                           begin: FractionalOffset.centerLeft,
-                           end: FractionalOffset.centerRight,
-                           tileMode: TileMode.repeated
-                       )
-                   ),
-                   child: Column(
-                     children: [
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('G')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('SO')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('5')
-                           ],),
-                       )
-                     ],
-                   ),
-                 ),
-               ),
-             ),
-           ),
-           Expanded(
-             child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 45),
-               child: InkWell(
-                 onTap: (){
-                   try{playAudio('6');}
-                   catch(ex) {print(ex);}
-                 },
-                 child: Container(
-                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                       gradient: new LinearGradient(
-                           colors: [
-                             HexColor('f8774f'),
-                             HexColor('f78351')
-
-                           ],
-                           stops: [0.0, 1.0],
-                           begin: FractionalOffset.centerLeft,
-                           end: FractionalOffset.centerRight,
-                           tileMode: TileMode.repeated
-                       )
-                   ),
-                   child: Column(
-                     children: [
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('A')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('LA')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('6')
-                           ],),
-                       )
-                     ],
-                   ),
-                 ),
-               ),
-             ),
-           ),
-           Expanded(
-             child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 50),
-               child: InkWell(
-               onTap: (){
-                 try{playAudio('7');}
-                 catch(ex) {print(ex);}
-               },
-                 child: Container(
-                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                       gradient: new LinearGradient(
-                           colors: [
-                             HexColor('6f5b52'),
-                             HexColor('8b7164')
-
-                           ],
-                           stops: [0.0, 1.0],
-                           begin: FractionalOffset.centerLeft,
-                           end: FractionalOffset.centerRight,
-                           tileMode: TileMode.repeated
-                       )
-                   ),
-                   child: Column(
-                     children: [
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('B')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('SI')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('7')
-                           ],),
-                       )
-                     ],
-                   ),
-                 ),
-               ),
-             ),
-           ),
-           Expanded(
-             child: Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 55),
-               child: InkWell(
-                 onTap: (){
-                   try{playAudio('1');}
-                   catch(ex) {print(ex);}
-                 },
-                 child: Container(
-                   decoration: BoxDecoration(
-                     borderRadius: BorderRadius.circular(25),
-                       gradient: new LinearGradient(
-                           colors: [
-                             HexColor('b64b63'),
-                             HexColor('e55f7a')
-
-                           ],
-                           stops: [0.0, 1.0],
-                           begin: FractionalOffset.centerLeft,
-                           end: FractionalOffset.centerRight,
-                           tileMode: TileMode.repeated
-                       )
-                   ),
-                   child: Column(
-                     children: [
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('C')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('Do')
-                           ],),
-                       ),
-                       Expanded(
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Text('8')
-                           ],),
-                       )
-                     ],
-                   ),
-                 ),
-               ),
-             ),
-           ),
 
 
 
@@ -433,4 +27,61 @@ class XyloPhoneScreen extends StatelessWidget {
      ]),
     );
   }
+  Widget BuildNoteItem({required double verticalPadding,required String fileName,
+    required String Color1,required String Color2,required String Letter,required String word,required String num})=> Expanded(
+    child: Padding(
+      padding:  EdgeInsets.symmetric(horizontal: 8,vertical: verticalPadding),
+      child: InkWell(
+        onTap: (){
+          try{
+            playAudio(fileName);
+          }
+          catch(ex)
+          {
+            print(ex);
+          }
+        },
+        child: Container(
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+              gradient: new LinearGradient(
+                  colors: [
+                    HexColor(Color1),
+                    HexColor(Color2)
+
+                  ],
+                  stops: [0.5, 0.5],
+                  begin: FractionalOffset.centerLeft,
+                  end: FractionalOffset.centerRight,
+                  tileMode: TileMode.repeated
+              )
+          ),
+          child: Column(
+            children: [
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(Letter)
+                  ],),
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(word)
+                  ],),
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(num)
+                  ],),
+              )
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
 }
